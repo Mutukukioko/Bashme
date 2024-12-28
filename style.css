@@ -361,9 +361,60 @@ a img.aligncenter {
 
 #mainNav.navbar-shrink .navbar-brand img{
 	max-width: 100px;
-    max-height: auto;
 }
 
+/* Mobile View Styling */
+@media (max-width: 900.98px) {
+    .navbar-dark {
+        background-color: transparent; /* Slightly opaque background for better visibility */
+        transition: all 0.3s ease 0s;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #ffffff;
+        font-size: 16px; /* Slightly larger font for better readability */
+        padding: 10px 15px;
+        text-align: center; /* Center align links for mobile */
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: #f0bf20; /* Highlight link color on hover */
+    }
+
+    .navbar-dark .navbar-nav .nav-link.active::after {
+        height: 3px;
+        border-radius: 0;
+        background: #f0bf20;
+        left: 20%;
+        right: 20%;
+    }
+
+    /* Shrinked Navbar Adjustments for Mobile */
+    #mainNav.navbar-shrink .navbar-nav .nav-link {
+        color: #ffffff; /* Ensure contrast when navbar shrinks */
+    }
+
+    #mainNav.navbar-shrink .navbar-nav .nav-link::after {
+        background: #ffffff;
+    }
+
+    #mainNav.navbar-shrink .navbar-nav .nav-link.active {
+        color: #f0bf20;
+    }
+
+    #mainNav.navbar-shrink .navbar-brand img {
+        max-width: 80px; /* Smaller logo for mobile view */
+    }
+
+    /* Navbar Toggler Styling */
+    .navbar-toggler {
+        border-color: #ffffff;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D"http://www.w3.org/2000/svg" viewBox%3D"0 0 30 30"%3E%3Cpath stroke%3D"rgba%280, 0, 0, 0.5%29" stroke-width%3D"2" stroke-linecap%3D"round" stroke-miterlimit%3D"10" d%3D"M4 7h22M4 15h22M4 23h22"%3E%3C/path%3E%3C/svg%3E');
+    }
+}
 
 /*------------------------------------------------------------------
     SECTIONS
