@@ -441,6 +441,26 @@ a img.aligncenter {
     z-index: 0;
     opacity: .6;
 }
+.half-size-banner {
+    height: 50%;
+    position: relative;
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+
+.half-size-banner::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    z-index: 0;
+    opacity: .6;
+}
+
 .heading{
 	color: #fff;
 	display: table-cell;
@@ -461,6 +481,34 @@ a img.aligncenter {
 
 .heading h3{
 	color: ffffff;
+}
+.half-size-heading {
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+}
+
+.half-size-heading h1 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 31px; /* Reduced from 62px */
+    text-transform: capitalize;
+}
+
+.half-size-heading p {
+    font-size: 9px; /* Reduced from 18px */
+    padding: 10px 0px; /* Reduced padding */
+}
+
+.half-size-heading h3 {
+    color: #ffffff;
+}
+.element {
+    background: url('uploads/makena-ventures.jpg') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire element */
+    height: 70vh; /* Ensures it takes full viewport height */
 }
 
 .cd-words-wrapper {
