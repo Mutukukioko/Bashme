@@ -361,6 +361,7 @@ a img.aligncenter {
 
 #mainNav.navbar-shrink .navbar-brand img{
 	max-width: 100px;
+    
 }
 
 /* Mobile View Styling */
@@ -403,7 +404,7 @@ a img.aligncenter {
     }
 
     #mainNav.navbar-shrink .navbar-brand img {
-        max-width: 80px; /* Smaller logo for mobile view */
+        max-width: 80px;
     }
 
     /* Navbar Toggler Styling */
